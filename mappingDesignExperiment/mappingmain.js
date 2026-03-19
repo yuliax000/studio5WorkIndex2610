@@ -4,6 +4,9 @@ const circleButton = document.getElementById("circleButton");
 const changeToCoral = document.getElementById("change-coral")
 const changeToYellow = document.getElementById("change-yellow")
 const changeToPink = document.getElementById("change-pink")
+let inputNumber = document.getElementById("inputNumber");
+
+
 // find stage width
 let stageContainerWidth = stageContainer.offsetWidth;
 console.log(stageContainerWidth);
@@ -49,15 +52,36 @@ circleButton.addEventListener("click", drawNewCircle);
 // to change my color, I need to find the value of the input clicked, and then update the
 //circle color const.
 
-function changeColorRadio(clickEvent) {
-    // clickEvent.target.value;
-    // find the value of whichever of the radio buttons was clicked.
-    let newColor = clickEvent.target.value;
-    // set the new circle color to that value
-    circleColor = newColor;
-}
+// function changeColorRadio(clickEvent) {
+//     // clickEvent.target.value;
+//     // find the value of whichever of the radio buttons was clicked.
+//     let newColor = clickEvent.target.value;
+//     // set the new circle color to that value
+//     circleColor = newColor;
+// }
 
 // add addEventListeners
-changeToCoral.addEventListener("click", changeColorRadio);
-changeToYellow.addEventListener("click", changeColorRadio);
-changeToPink.addEventListener("click", changeColorRadio);
+
+// changeToCoral.addEventListener("click", changeColorRadio);
+// changeToYellow.addEventListener("click", changeColorRadio);
+// changeToPink.addEventListener("click", changeColorRadio);
+
+
+// I choose to use number input as my mapping experiment because numbers can provide precise result
+// most digital drawing tools are using numbers to control the value of color, no matter HSL or sRGB
+//It may not be inclusive enough, while it provides a way for users to explore the mapping mechanism.
+
+// when input a number, change color
+function changeColorByNumber() {
+    let hue = Number(inputNumber.value);
+    circleColor = `hsl(${hue},100%,50%)`
+}
+
+inputNumber.addEventListener("input", changeColorByNumber);
+
+
+
+
+
+
+

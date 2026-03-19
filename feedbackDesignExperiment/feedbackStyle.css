@@ -4,21 +4,22 @@
     height: 3rem;
     transition: 900ms;
 }
+
 /*the button changes the color, provides feedback for hovering.
 At the same time, it matches the color change of background.
-I think it indicates the color change.*/
+I choose this feedback because it can catch users attention quickly. */
 #play-button:hover {
-    cursor:pointer;
+    cursor: pointer;
     background-color: black;
-    color:white;
+    color: white;
 }
 
-/*I reverse the color of background and the button because I want to enhance the feedback.
-although I think the feedback is too strong. I will not use it in my website tool*/
-#play-button:active{
+/*I reverse the color of background and the button because I want to enhance the visual feedback.
+although the feedback is too strong. I may not use it in my website tool*/
+#play-button:active {
     width: 6rem;
     height: 4rem;
-    background-color:white;
+    background-color: white;
     color: black;
 }
 
