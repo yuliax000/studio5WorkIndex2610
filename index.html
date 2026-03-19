@@ -1,61 +1,172 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Studio Work Index</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon-32x32.png"
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon-32x32.png"
     />
-  </head>
-  <body>
-    <main>
-      <h1>Yulia's studio Work Index</h1>
+</head>
+<body>
+<main>
+    <h1>Yulia's studio Work Index</h1>
 
-      <h3>s3847150</h3>
+    <h3>s3847150</h3>
 
-      <section>
+    <section>
         <h2>Introduction Exercise</h2>
 
         <p>Hello, my name is Yulia(she/her). I come from Chengdu, China.</p>
         <p>
-          I was in Animation Design. I'm interested in web design and
-          interactive media, so I transferred to digital media.
+            I was in Animation Design. I'm interested in web design and
+            interactive media, so I transferred to digital media.
         </p>
         <p>I don't really have favorite emoji, but I love cat memes.</p>
         <p>
-          My familiar expressive softwares are adobe photoshop and procreate,
-          basically some painting tools.
+            My familiar expressive software are adobe photoshop and procreate,
+            basically some painting tools.
         </p>
         <p>
-          I did Interactive Media last semester, which provides me some coding
-          experience.
+            I did Interactive Media last semester, which provides me some coding
+            experience.
         </p>
 
         <a href="https://github.com/yuliax000" target="_blank"
-          >link to my github</a
+        >link to my github</a
         >
-      </section>
+    </section>
 
-      <section>
+    <div>
         <h2>In-class Experiments</h2>
-        <a href="./informationDesignExperiment"
-          >Experiment 1-information design</a
-        >
-        <a href="./feedbackDesignExperiment">Experiment 2 - feedback design</a>
-      </section>
+        <div class="experiments">
+            <a href="./informationDesignExperiment" id="experiments1">Experiment 1-information design</a>
+            <a href="./feedbackDesignExperiment" id="experiments2">Experiment 2 - feedback design</a></div>
 
-      <section>
+    </div>
+
+    <section>
         <h2>Studio Project Speculation</h2>
-        <h3>Purpose</h3>
+        <div class="inspiration">
+            <h3>inspiration and function</h3>
+            <p>This project reframes digital brush creation from a technical process into a visualized, playful, and
+                generative process.</p>
+            <p>The inspiration for this project comes from a screenshot of a post on X, where someone discovered that
+                the
+                brush they were using for drawing was made from an image of a painter’s face.</p>
+            <p>The main function of the website is that users draw on the canvas, and the patterns they create can be
+                turned
+                into brush shapes. These newly generated brushes can be saved, and users can continue drawing with them
+                to
+                generate new brush patterns. After each stroke, the brush used is replaced by the image created in the
+                previous stroke. The website also allows users to save brushes at any time, so they can reuse previously
+                saved patterns, continue drawing with them, and further generate new brushes from their drawings.</p>
+        </div>
 
-        <p></p>
-      </section>
-    </main>
-  </body>
+        <div class="purpose">
+            <h3>Purpose</h3>
+            <ul>
+                <li>Allow users to create brushes through interaction with the canvas on the website.
+                </li>
+                <li>Exploration – allow users to explore visual patterns during the brush-making process.</li>
+                <li>The idea of the brush is inspired by <a href="https://bomomo.com/">bomomo</a>, which provides a
+                    variety
+                    of brushes composed of simple graphic elements. By clicking on a brush, it generates lines using
+                    that
+                    brush. During my experience with the website, I explored different brush effects, and the process
+                    felt
+                    enjoyable. The interaction is very simple and light. However, while creating drawings, I also wanted
+                    to
+                    have some control over the brush, but it mainly generates patterns randomly, which made me feel a
+                    bit
+                    limited. Although the generated patterns are visually appealing, the sense of control is relatively
+                    weak. Therefore, I want to create a website where users can both experience the process of brushes
+                    generating marks and have a certain level of control over the brush. Users should be able to explore
+                    and
+                    create within this system.
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class="worth">
+            <h3>Worth</h3>
+            <ul>
+                <li>Approachable — lowering the barrier to creative tools
+                </li>
+                <p>WigglyPaint provides a simple tool for creating micro-animations. I really like its brush texture,
+                    which maintains a consistent style while still feeling unique. What impressed me is that it uses a
+                    single simple rule — making lines move — yet allows users to create stylized works. It makes effects
+                    that would normally require professional software much easier to achieve. Similarly, my website aims
+                    to simplify brush creation through a clear interface and interaction, making it easier for users to
+                    create and experiment with their own brushes.</p>
+                <li>Improve usability and efficiency in brush creation</li>
+                <p>Traditional painting software provides static brushes. Although users can create brushes from images,
+                    the process is often complicated and not easy to discover. On social platforms, only a small number
+                    of users create brushes, while most download or purchase them. This project aims to provide a more
+                    accessible way for users to create their own brushes and use them in their artwork. In traditional
+                    painting, brushstrokes are an important form of expression, and this tool aims to expand that
+                    expressive potential.</p>
+                <li>Empowering and meaningful — allowing users to create their own tools and artwork
+                </li>
+                <p>Useless Painter, along with tools like WigglyPaint and <a href="http://weavesilk.com/">silk</a>,
+                    shows that users feel motivated when
+                    they can produce visually interesting results. These tools provide both randomness and a certain
+                    level of control, which helps stimulate creativity. In this project, control is reflected in the
+                    ability to save brushes at any time. The tool should also support producing usable outputs, such as
+                    exporting PNG images that can be reused in other software.</p>
+                <li>Learnability — enabling intuitive learning through visual interaction</li>
+                <p>Users should be able to learn the system in an intuitive and visual way. The interaction should
+                    remain similar to existing drawing tools, allowing users to quickly get started. A dynamic preview
+                    window shows the current brush shape, providing immediate feedback. Even without prior experience,
+                    users should understand the system after a few attempts. Icons are used where possible to reduce
+                    cognitive load, as visual representation is a highly intuitive form of information design.</p>
+                <li>Making the process enjoyable, engaging, and motivating</li>
+                <p>The tool provides immediate feedback (and potentially subtle sound effects) to create positive
+                    reinforcement during the creative process. This encourages users to continue exploring. While I
+                    experimented with stronger visual feedback in Experiment 2, I found it may be slightly excessive for
+                    a drawing-focused interface.
+                </p>
+            </ul>
+
+
+        </div>
+        <div class="framing">
+            <h3>Framing</h3>
+            <ul>
+                <li>Playful experimentation
+                    <p>I want the tool to have a lively and stylized interface, similar to WigglyPaint and Useless
+                        Painter, so that users feel relaxed and motivated while creating. The goal is to encourage users
+                        to play with the system rather than feeling pressure to produce a “masterpiece”.</p>
+                </li>
+                <li>Exploratory interaction</li>
+                <p>The tool should support an exploratory mode of interaction. In Useless Painter, I found that the way
+                    information is presented can be slightly confusing, and it took some time to figure out how to
+                    control the brush. In this project, users can simply draw freely on the canvas to generate patterns.
+                    I will provide a limited set of controls (such as switching between brush and eraser) along with
+                    minimal text guidance, allowing users to discover different effects and functions through
+                    exploration.</p>
+                <li>Generative creation
+                </li>
+                <p>This approach is inspired by <a href="http://weavesilk.com/">silk</a> and <a
+                        href="https://theuselessweb.com/">the useless web</a>. Silk uses
+                    generative patterns to support
+                    creation, while The Useless Web highlights the appeal of randomness. In this project, the system
+                    responds to user interaction by producing changing visual outcomes, introducing unexpected
+                    variations that encourage experimentation. Brush creation itself becomes a form of creative
+                    exploration, rather than a technical process. This generative approach also helps users avoid
+                    getting lost in complex parameter settings found in traditional brush-making tools.</p>
+            </ul>
+
+
+        </div>
+    </section>
+</main>
+</body>
 </html>
