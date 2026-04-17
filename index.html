@@ -40,7 +40,15 @@
         <a href="https://github.com/yuliax000" target="_blank"
         >link to my github</a
         >
+
+
     </section>
+    <div class="prototype">
+        <h2>Prototype</h2>
+        <a href="./mediated-expression-brush-maker">Prototype code</a>
+        <a href="">prototype website</a>
+
+    </div>
 
     <div>
         <h2>In-class Experiments</h2>
@@ -172,6 +180,158 @@
 
         </div>
     </section>
+
+
+    <section>
+        <div class="a2">
+            <h2>Assignment2</h2>
+        </div>
+        <div class="prototype">
+            <h2>Prototype</h2>
+            <a href="./mediated-expression-brush-maker">Prototype code</a>
+            <a href="">prototype website</a>
+
+        </div>
+
+
+        <div class="conceptualResponse">
+            <h3>Conceptual Response</h3>
+        </div>
+        <div class="mapping">
+            <h4>mapping</h4>
+            <p>User input does not only generate visual output, but also reshapes the tool being used. The brush evolves
+                through each interaction, meaning that every stroke affects future outcomes. This transforms the brush
+                from a static tool into a dynamic one, where each output feeds back into the next input.</p>
+            <p>I chose this approach to encourage users to participate in the making of the tool, rather than simply
+                using a finished instrument. Through interaction and exploration, the tool itself becomes part of the
+                overall experience.</p>
+            <p>By doing so, the design encourages users to engage creatively not only with the image-making process, but
+                also with the design of the tool itself. It helps them become more aware of the small and initial
+                elements that shape their creation, and gives them opportunities to express their ideas through each
+                subtle detail of the evolving system.</p>
+        </div>
+        <div class="informationDesign">
+            <h4>Information Design</h4>
+            <p>The interface provides minimal guidance, encouraging users to explore and discover the underlying logic
+                through interaction.</p>
+            <p>The target users are hobbyists who enjoy digital drawing. Rather than offering a highly complex or
+                professional brush-making system, the tool adopts a simplified approach that can still generate useful
+                outputs, such as exportable PNG images.</p>
+
+            <p>The interface is designed to be playful and relies more on icons than text, supporting intuitive
+                understanding over technical instruction. As drawing itself is a creative and playful interaction, the
+                interface aims to reflect and extend this emotional quality to the user.</p>
+            <p>As discussed in my earlier work, the project shifts brush-making away from tedious parameter
+                adjustments and highly technical interfaces. By lowering the barrier to entry, it reframes the process
+                as an intuitive, simple, and engaging experience suitable for everyday creative practice.</p>
+            <p>This approach contrasts with conventional design tools that rely on precise parameter control, instead
+                promoting exploration, accessibility, and creative engagement.</p>
+        </div>
+
+
+        <div class="technicalApproach">
+            <h3>
+                Technical Approach
+            </h3>
+        </div>
+        <div class="wireFrame">
+            <h4>WireFrame</h4>
+            <img src="assets/paintYourBrush.png" alt="wireframe">
+
+        </div>
+
+        <div class="workflow">
+            <h4>Flowchart</h4>
+            <div class="workflowimg">
+                <img src="assets/workflow1.png" alt="workflow1">
+                <img src="assets/saveWorkflow.png" alt="saveWorkflow">
+            </div>
+        </div>
+
+        <div class="reference">
+            <h4>reference websites</h4>
+            <a href="https://konvajs.org/docs/sandbox/Free_Drawing.html">Draw Manually</a>
+            <a href="https://web.archive.org/web/20190213134910/http://www.tricedesigns.com/2012/01/04/sketching-with-html5-canvas-and-brush-images/">sketching
+                with brush image</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL">toDataURL (haven’t
+                used. Plan to use in undo/redo and save to library function) </a>
+            <a href=" https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImages">drawImage()
+                method (to draw with resized canvas content.)</a>
+        </div>
+        <div class="technicalDiscussion">
+            <p>The core functionality of this project is to replace continuous stroke rendering with image-based
+                stamping, where strokes are formed by repeatedly placing brush images instead of connected points.
+                Additionally, the current canvas content is used as the brush source.</p>
+            <p>The implementation is informed by approaches such as “Sketching with Brush Images”. The overall method
+                uses trigonometry to calculate the distance between the start point and end point, and then determines
+                the x and y positions for each stamp along the path. A loop (e.g. z++ or z += value) is used to control
+                the spacing between stamps, resulting in a continuous drawing effect.</p>
+            <p>To achieve the generative functionality, drawImage() is used to capture and scale down the current canvas
+                content onto a separate, smaller brush canvas (with plans to allow adjustable brush canvas size in
+                future iterations). This smaller canvas is then reused as the brush source to generate evolving visual
+                patterns.</p>
+            <p>To support the eraser as a creative tool, destination-out is used for erasing, while source-over is used
+                for normal drawing.</p>
+            <p>For the preview window, a separate canvas is created to render the current brush source. The preview is
+                updated during the mouseup stage to reflect the latest brush state.</p>
+            <p>For the brush library, the proposed approach is to use toDataURL() to store brush images, push them into
+                an array, and render them as thumbnails using small canvases. This part has not yet been implemented and
+                remains to be tested.</p>
+            <p>I also plan to implement undo/redo functionality using arrays, with a logic similar to the brush library
+                system.</p>
+            <p>While experimenting with new ideas—specifically introducing randomness into the brush—I unintentionally
+                discovered a texture similar to a spray tool. I plan to develop this into a dedicated tool within the
+                toolbar.</p>
+            <p>For the UI, I intend to design custom icons and adopt a hand-drawn visual style. At current stage,
+                different functional areas are distinguished using color blocks.</p>
+        </div>
+
+        <div class="userTesting">
+            <h3>Peer User Testing</h3>
+            <div class="testingForm">
+                <h4>Peer User Testing Form</h4>
+                <a href="https://forms.cloud.microsoft/r/tMvCRnWhTT">Form link</a>
+
+            </div>
+
+            <div class="testingReflection">
+                <h4>Peer User Testing Reflection</h4>
+                <p>---</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline">
+            <h3>Project Timeline</h3>
+            <p>Week1 to 3: concept and speculation.</p>
+            <p>Week 4: wireframe and Prototype(html+css).</p>
+            <p>Week5-1 : understand and implement reference: Konvajs draw manually.</p>
+            <p>Week 5-2: understand and implement reference: sketching with image.</p>
+            <p>Week 6-1: core feature implementation (generative brush).</p>
+            <p>Week6-2: prototype for A2.</p>
+            <p>Week 7: Peer User testing and organize documentation.【At this stage】</p>
+            <p>Week 8-1: brush library implementation.</p>
+            <p>Week 8-2: start building toolbar features.</p>
+            <p>Week 9: toolbar features: spray tool, sliders for changing size and opacity, color palette(if
+                needed).</p>
+            <p>Week 10: tool bar features refine, drawing tool button, stylize UI.</p>
+            <p>Week 11: stylized UI refinement, A3</p>
+            <p>Week 12 to 13: reflection and manage documentation</p>
+
+
+            <h4>A2 phase</h4>
+            <p>The project is generally progressing according to plan. However, I spent more time than expected trying
+                to understand Konva and sketching with images—especially the latter—which required me to use the
+                mid-break period to catch up.</p>
+            <p>After establishing the core functionality, I decided to introduce a preview window at the prototype stage
+                to make the system logic clearer for users. This was not part of the original plan, but I chose to
+                implement it earlier than scheduled to improve usability.</p>
+        </div>
+
+    </section>
+
+
 </main>
 </body>
 </html>
