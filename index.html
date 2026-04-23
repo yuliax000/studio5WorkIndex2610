@@ -41,12 +41,21 @@
         >link to my github</a
         >
 
-
     </section>
+
+    <div class="pageLink">
+        <h2>Assignment Links</h2>
+        <a href="#a1Container">Assignment 1</a>
+        <a href="#a2Container">Assignment 2</a>
+    </div>
+
+
     <div class="prototype">
         <h2>Prototype</h2>
-        <a href="./mediated-expression-brush-maker">Prototype code</a>
-        <a href="">prototype website</a>
+        <a href="https://github.com/yuliax000/mediated-expression-brush-maker/tree/prototype">Prototype code</a>
+        <a href="https://brushmaker.netlify.app/">prototype website</a>
+        <a href="https://forms.cloud.microsoft/?redirecturl=https%3a%2f%2fforms.cloud.microsoft%2fPages%2fDesignPageV2.aspx%3fprevorigin%3dMarketing%26origin%3dNeoPortalPage%26subpage%3ddesign%26FormId%3dcTYy0b7NF0S01L2yS1ExaxNfHBOG7K5CiuYoEDeMwexUM1pCTTlKUVdKWEUxMk5ZWEQyTlBHNTBGUy4u&auth_pvr=OrgId">Peer
+            User Testing Form</a>
 
     </div>
 
@@ -60,7 +69,7 @@
 
     </div>
 
-    <section>
+    <section id="a1Container">
         <h2>Studio Project Speculation</h2>
         <div class="inspiration">
             <h3>inspiration and function</h3>
@@ -149,7 +158,7 @@
         <div class="framing">
             <h3>Framing</h3>
             <ul>
-                <p>I want o explore KonvaJS’s canvas and shape functionalities, and possibly use screenshots to capture
+                <p>I want to explore KonvaJS’s canvas and shape functionalities, and possibly use screenshots to capture
                     the current shapes. Mapping the drawing input as another input for next action. I experiment a
                     mapping mechanism between numbers and colors. It probably can be used to transform coordinate and
                     stroke color. </p>
@@ -182,14 +191,16 @@
     </section>
 
 
-    <section>
+    <section id="a2Container">
         <div class="a2">
             <h2>Assignment2</h2>
         </div>
         <div class="prototype">
             <h2>Prototype</h2>
-            <a href="./mediated-expression-brush-maker">Prototype code</a>
-            <a href="">prototype website</a>
+            <a href="https://github.com/yuliax000/mediated-expression-brush-maker/tree/prototype">Prototype code</a>
+            <a href="https://brushmaker.netlify.app/">prototype website</a>
+            <a href="https://forms.cloud.microsoft/?redirecturl=https%3a%2f%2fforms.cloud.microsoft%2fPages%2fDesignPageV2.aspx%3fprevorigin%3dMarketing%26origin%3dNeoPortalPage%26subpage%3ddesign%26FormId%3dcTYy0b7NF0S01L2yS1ExaxNfHBOG7K5CiuYoEDeMwexUM1pCTTlKUVdKWEUxMk5ZWEQyTlBHNTBGUy4u&auth_pvr=OrgId">Peer
+                User Testing Form</a>
 
         </div>
 
@@ -296,7 +307,42 @@
 
             <div class="testingReflection">
                 <h4>Peer User Testing Reflection</h4>
-                <p>---</p>
+                <p>Guidance: My original intention was to let users explore how the website works on their own. However,
+                    the actual outcome was disappointing. Many users reported feeling confused when they first opened
+                    the site, and about half of them did not clearly understand its logic. It seems that the generative
+                    mode button and the guidance were not prominent enough, leading some users to miss the need to click
+                    it. In future development, I am considering removing the default mode and allowing the generative
+                    mode to function directly, or enlarging the generative mode button to make it more noticeable.</p>
+                <p>Based on feature feedback, almost all users expressed a desire for more functionality. Planned
+                    features for future development include:</p>
+                <ul>
+                    <li>Brush library</li>
+                    <li>Undo/Redo</li>
+                    <li>Brush/Eraser size adjustment</li>
+                    <li>Opacity controller</li>
+                    <li>Color palette</li>
+                    <li>Eraser pattern variation</li>
+                </ul>
+
+                <p>About half of the users also noted that the brush pattern is not obvious enough. I am considering
+                    adding a spacing adjustment feature, but the challenge is that mousedown and mousemove events can be
+                    interpreted as a series of click events, making spacing difficult to control.</p>
+                <p>In addition, I overlooked an incorrect use of var(), which caused the canvas to turn black when
+                    switching to dark mode. This issue will be fixed.</p>
+                <p>Regarding device compatibility, some users reported multiple bugs, although the website runs well on
+                    my Chrome browser. I plan to conduct cross-browser testing to verify performance across different
+                    environments.</p>
+                <p>In terms of UI, I decided to adopt a playful approach. The current prototype lacks a well-developed
+                    interface and mainly serves as a structural framework.</p>
+                <p>Overall, I am very grateful for this user testing, as it revealed many issues and provided valuable
+                    direction for future development.</p>
+                <h4>Next Actions</h4>
+                <ul>
+                    <li>Implement the planned feature list</li>
+                    <li>Create final UI sketches</li>
+                    <li>Improve guidance and learnability (reduce cognitive load)</li>
+                    <li>Refine UI, including color, style, and icon updates</li>
+                </ul>
 
             </div>
 
@@ -313,9 +359,8 @@
             <p>Week 7: Peer User testing and organize documentation.【At this stage】</p>
             <p>Week 8-1: brush library implementation.</p>
             <p>Week 8-2: start building toolbar features.</p>
-            <p>Week 9: toolbar features: spray tool, sliders for changing size and opacity, color palette(if
-                needed).</p>
-            <p>Week 10: tool bar features refine, drawing tool button, stylize UI.</p>
+            <p>Week 9: toolbar features: spray tool, sliders for changing size and opacity, color palette.</p>
+            <p>Week 10: toolbar features refine, drawing tool button, stylize UI. Responsive system</p>
             <p>Week 11: stylized UI refinement, A3</p>
             <p>Week 12 to 13: reflection and manage documentation</p>
 
@@ -331,6 +376,7 @@
                 it doesn't work well. There's some conflict between the click-stamp system and speed control system. I
                 gave up this idea</p>
         </div>
+
 
     </section>
 

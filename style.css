@@ -90,3 +90,15 @@ li {
     justify-content: center;
     align-items: center;
 }
+
+.pageLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    padding: 0;
+    margin-bottom: 0.3rem;
+}
