@@ -392,7 +392,299 @@
 
     </section>
 
-    <section id="a4Container"></section>
+    <section id="a4Container">
+        <div class="a4">
+            <h2>Assignment 4</h2>
+        </div>
+        <div class="designReflection">
+            <h3>Design Reflection</h3>
+            <p>I successfully developed a brush-making tool with a rich range of functions. The core logic of the tool
+                is that the user's input directly affects the brushes they use afterwards. Based on this main
+                interaction, the project gradually expanded beyond my original plan, and I added several unexpected
+                features such as random colour, undo/redo, and the spray tool.</p>
+            <p>In terms of functionality, I achieved all of the features I originally planned, while also adding extra
+                support features such as the brush preview and guide modal. These additions helped users better
+                understand the tool, observe the brush changes, and begin the experience with less confusion. Overall, I
+                feel satisfied with the functional outcome of the project.</p>
+            <p>My judgement of worth contains several aspects. In terms of layout and visual characterisation, I avoided
+                adding too many decorative elements and tried to keep the interface relatively minimal. I used
+                hand-drawn icons and a paper-textured background to lower the psychological barrier of making artwork.
+                My aim was to simulate the relaxed experience of casually doodling on paper, so the website could feel
+                playful, approachable, and easy to start using.</p>
+            <p>To meet my purpose, the website allows users to create brushes while experiencing how the brushes change
+                through their own actions. The interaction is designed to be intuitive and accessible, requiring users
+                only to draw rather than adjust complex parameters.</p>
+            <p>I intentionally avoided explaining the full generative logic through text because I wanted users to
+                discover the behaviour of the tool through exploration.</p>
+            <p>Referring to my previous writing in Assignment 1, all of the functions in the website are designed around
+                brush creation, allowing users to test and develop brushes while immediately seeing the visual results
+                of their own input.</p>
+            <p>For better learnability, I designed the more conventional parts of the interface, such as function icons,
+                layout, and some keyboard shortcuts, in a way that refers to existing creative software. This allows
+                users to understand the basic functions more quickly and focus their attention on exploring the
+                brush-generation logic. I also used text in a restrained way to explain special functions, and added a
+                guide modal to further support users during the exploration process.
+
+            </p>
+
+            <p>My chosen interaction design principles are mapping and information design. In terms of mapping, the
+                novel aspect lies in the unpredictability of the experience. As I discussed in Assignment 2, the
+                boundary between using a tool and experiencing a tool becomes blurred. However, I introduced this
+                unpredictability in a restrained way. If the result became too chaotic, users might lose their sense of
+                control and feel frustrated. Therefore, the project needed to balance surprise with usability, allowing
+                users to experience uncertainty while still being able to make creative decisions.</p>
+            <p>The information design aspect was less experimental than the mapping, but it became important during user
+                testing. At first, I wanted to encourage more independent exploration, but I found that too little
+                guidance confused users. To better communicate the functions, I increased the amount of explanatory
+                text. Although many functions are represented through icons, each icon includes a hover tooltip to
+                explain its purpose and reduce the user’s cognitive load. This is a relatively conventional design
+                approach, but it helped make the experimental interaction more understandable.</p>
+
+            <div class="explorations">
+                <div class="exploration1">
+                    <h4>Design Judgment Exploration 1</h4>
+                    <p>My first design judgment exploration focused on the background and colour design of the website.
+                        The main question I explored was how to make the interface feel playful and approachable without
+                        becoming distracting or visually overwhelming.
+
+                    </p>
+                    <img src="assets/1e1.png" alt="1e1">
+                    <p>In the first version, I kept the bright colour palette from the original prototype and mainly
+                        adjusted the interface by adding rounded corners. I believed that the bold colours created a
+                        stronger sense of playfulness and energy. However, the overall appearance still felt relatively
+                        digital and lacked the relaxed atmosphere I wanted for the project.</p>
+                    <img src="assets/1e2.png" alt="1e2">
+                    <p>In the second version, I introduced a dot matrix texture inspired by dotted notebooks. Compared
+                        to the first version, this interface appeared cleaner, more organised, and more minimal. The
+                        texture also created a slight cardboard or paper-like feeling, which helped the website feel
+                        softer and less technological. However, the interface also became more structured and
+                        controlled.</p>
+                    <img src="assets/1e3.png" alt="1e3">
+                    <p>The third version used a crumpled paper texture as the main background. I ultimately chose this
+                        version, partly because of user feedback and partly because I personally preferred its visual
+                        character. The texture created a more casual and imperfect feeling, which better matched the
+                        idea of experimental drawing and playful exploration. </p>
+                    <p>I intentionally kept the texture relatively visible instead of lowering its opacity. I found that
+                        interfaces which are too clean or overly structured can unintentionally create pressure for
+                        users, while the rougher paper texture made the experience feel more approachable and relaxed.
+                        This exploration showed me that users generally prefer a balance between playfulness and
+                        clarity, rather than interfaces that are either overly minimal or overly chaotic.
+
+                    </p>
+
+
+                </div>
+
+                <div class="exploration2">
+                    <h4>Design Judgment Exploration 2</h4>
+                    <p>My second design judgment exploration focused on how to make the guidance system clearer, more
+                        approachable, and easier for users to understand. Because the tool contains experimental and
+                        unpredictable interactions, I needed to consider how much instruction users required without
+                        removing the sense of exploration.</p>
+                    <p>In the earliest version, the starting modal contained several clear step-by-step instructions
+                        that explained how users should interact with the tool. My original intention was to make the
+                        process easy to understand by giving users direct procedural guidance. However, feedback
+                        suggested that this approach felt slightly too instructional and reduced the exploratory
+                        atmosphere of the project.</p>
+                    <img src="assets/2e1.png" alt="2e1">
+                    <p>As a result, the first refined version replaced the step-by-step instructions with a more
+                        friendly paragraph-style introduction. In this version, the shortcuts were separated from the
+                        welcome message and placed inside a guide button. I believed this approach kept the opening
+                        guidance simpler and less overwhelming. However, I found that some users did not carefully read
+                        the introduction at the beginning, while others wanted a way to reopen the instructions later
+                        during the experience.</p>
+                    <img src="assets/2e2.png" alt="2e2">
+                    <p>This led to the second version, which removed the starting pop-up modal entirely. Instead, both
+                        the shortcuts and guidance information were placed inside the guide button. I believed this
+                        version created a stronger sense of freedom and allowed users to explore the interface more
+                        independently. The shortcut design also continued to use arrow-based visual indicators from the
+                        previous version, which some users found clearer during testing. However, I discovered that
+                        removing the welcome modal completely also made some users feel uncertain about how to
+                        begin.</p>
+                    <img src="assets/2e3.png" alt="2e3">
+                    <p>As a result, the final version combined both a starting pop-up modal and a guide button that
+                        could reopen the welcome message and shortcuts at any time.</p>
+                    <p>Initially, I worried that this design might feel repetitive or visually cluttered. However, user
+                        feedback suggested that the ability to revisit the welcome message actually made the experience
+                        feel more reassuring and approachable. I also reorganised the shortcut layout using spacing and
+                        alignment to improve readability and clarity. Therefore, I ultimately selected the third
+                        version.</p>
+                    <p>Through this exploration, I realised that experimental interactions still require a certain level
+                        of emotional reassurance and guidance. While users enjoyed discovering the behaviour of the tool
+                        themselves, they also wanted the security of being able to return to the instructions whenever
+                        needed. This helped me better understand the balance between exploration, freedom, and
+                        usability.</p>
+
+
+                </div>
+
+                <div class="exploration3">
+                    <h4>Design Judgment Exploration 3</h4>
+                    <p>This exploration focused on how to increase the visual playfulness of the background while still
+                        supporting the overall drawing experience. I wanted the interface to feel connected to the idea
+                        of sketching and experimentation, but I also needed to consider how much visual detail users
+                        could comfortably engage with.</p>
+                    <img src="assets/3e1.png" alt="3e1">
+                    <p>In the first version, I added several hand-drawn doodles that I created myself. These marks
+                        contained loose brushstroke, making the interface resemble a sketchbook or rough draft page.
+                        Some users strongly preferred this version because they felt it was more playful, expressive,
+                        and visually interesting. Personally, this was also my favourite version. However, a small
+                        number of users reacted negatively to the doodles and even expressed the desire to erase them.
+                        This made me realise that drafted visual elements can also create discomfort or distraction for
+                        some users.</p>
+                    <img src="assets/3e2.png" alt="3e2">
+                    <p>The second version replaced the loose hand-drawn doodles with more organised image-based
+                        decorative elements. Compared to the first version, this background appeared cleaner and more
+                        controlled while still maintaining a playful atmosphere. Most users preferred this version
+                        because it felt visually comfortable without becoming too empty or chaotic.</p>
+                    <img src="assets/3e3.png" alt="3e3">
+                    <p>The third version removed the doodles entirely and only kept the textured background. I initially
+                        believed this version would create the cleanest and most minimal experience, and I strongly
+                        considered choosing it. However, most users described the interface as feeling too empty and
+                        visually uninteresting. This result surprised me, because I originally assumed that reducing
+                        visual noise would improve the experience.</p>
+                    <p>Ultimately, I selected the second version. Although I personally found it slightly less
+                        expressive than the first version, it created a stronger balance between playfulness and visual
+                        clarity. This exploration showed me that users generally prefer interfaces that contain
+                        controlled visual personality rather than either extreme minimalism or chaotic draft. It
+                        also reminded me that my own aesthetic preference as a designer does not always align with the
+                        most comfortable user experience.</p>
+
+                </div>
+
+                <div class="timelineRef">
+                    <h4>Timeline Reflection</h4>
+                    <p>I developed the project by following the timeline established in Assignment 2 and found that it
+                        worked well overall. After completing the implementation of the brush library in Week 8, which I
+                        had originally expected to be quite difficult, I was able to complete some of the tasks planned
+                        for Week 9 earlier than expected. As a result, the entire timeline moved forward
+                        considerably.</p>
+                    <p>During Week 9, I completed the design of the icons and integrated them into the user interface,
+                        while also making small adjustments to the functionality. Characterisation took much more time
+                        than I had anticipated. Both Week 10 and Week 11 were largely spent refining the
+                        characterisation of the tool and conducting repeated rounds of user testing. Throughout the
+                        process, new ideas emerged and were incorporated into the project. Most of my documentation was
+                        recorded alongside the coding process as the project developed.</p>
+                </div>
+
+                <div class="proud">
+                    <h4>Proud</h4>
+                    <p>The aspect of the project that I am most proud of is the range of functions I designed for the
+                        tool. At the beginning of the project, I did not expect it to develop into such a feature-rich
+                        experience.</p>
+                    <p>Some of the most successful features emerged unexpectedly during production rather than being
+                        part of the original proposal. For example, while experimenting with ways to increase the
+                        unpredictability of the brush behaviour, I accidentally produced a spray-like effect. Rather
+                        than treating this as a mistake, I recognised its potential and decided to develop it into a
+                        dedicated tool, expanding the variety of drawing options available. I then spent additional time
+                        refining and improving the spray tool.</p>
+                    <p>The random colour function followed a similar process. Originally, I intended to create a
+                        traditional colour palette. However, as the project developed, I became increasingly interested
+                        in introducing unpredictability into the drawing experience, which eventually led to the random
+                        colour feature. I selected suitable palettes from Lospec and deliberately chose muted, softer
+                        colours rather than highly saturated ones. I wanted users to feel relaxed and comfortable while
+                        using the website, rather than being overwhelmed by bright or visually chaotic colours.</p>
+                    <p>Because there are few universally recognised icons that directly represent random colour
+                        generation, I chose to use a colour palette icon instead. This suggests colour variation while
+                        allowing the randomisation itself to remain a small surprise within the experience.</p>
+                    <p>During my own testing, I discovered that brushes in Evolve Mode gradually became darker and
+                        increasingly difficult to control. Reflecting on my original intention, I realised that I wanted
+                        users to experience unpredictability without completely losing control over the tool. This led
+                        me to separate the system into two different modes, allowing users to choose between stability
+                        and unpredictability depending on their preferred creative process.</p>
+                    <p>Ultimately, the project evolved into a feature-rich brush-making tool that can genuinely support
+                        artistic creation rather than functioning only as a technical experiment. I am very satisfied
+                        with this outcome. I have also used the tool to create several interesting artworks and received
+                        a considerable amount of positive feedback from others. One encouraging outcome was that many
+                        users highlighted the unpredictability of the tool as one of its most interesting features in
+                        their feedback.</p>
+
+
+                </div>
+
+                <div class="challenge">
+                    <p>One aspect that surprised me during development was how challenging characterisation,
+                        responsiveness, and learnability became throughout the project.</p>
+                    <div class="characterisation">
+                        <h4>Characterisation</h4>
+                        <p>In terms of characterisation, I chose to use a layout that was similar to professional
+                            creative software because I wanted users to feel familiar with the interface and learn the
+                            functions quickly. However, this also created a challenge. Since the overall structure
+                            already resembled existing software, I needed to spend additional time introducing
+                            personality and playfulness in other ways.</p>
+                        <p>To achieve this, I added subtle animations, intentionally positioned some interface elements
+                            using absolute positioning, and slightly tilted certain buttons to create the feeling of
+                            overlapping pieces of paper. I also introduced irregular edges and paper textures to
+                            reinforce the handmade and playful character of the tool. Compared to my original
+                            expectations, I spent much more time refining these details than I had anticipated.</p>
+
+
+                    </div>
+                    <div class="responsiveness">
+                        <h4>Responsiveness</h4>
+                        <p>These characterisation choices also created a number of responsive design challenges. Because
+                            several interface elements relied on absolute positioning, I needed to continuously adjust
+                            the size and placement of buttons and canvas elements across different screen sizes.
+
+                        </p>
+                        <p>Maintaining a responsive square canvas was particularly difficult because the preview system
+                            depended on a consistent aspect ratio. As a result, I needed to manage both the actual
+                            drawing canvas and the visual layout canvas simultaneously.</p>
+                        <p>Overall, I spent approximately one week refining the responsive behaviour of the interface.
+                            Although this process was technically demanding, it significantly improved the usability of
+                            the final project.</p>
+
+                    </div>
+                    <div class="learnability">
+                        <h4>Learnability</h4>
+                        <p>Learnability also proved more challenging than I initially expected. Because the tool
+                            contains randomness, two different modes, and a range of functions, some users struggled to
+                            immediately understand the core idea during testing.</p>
+                        <p>As a result, I spent considerable time refining the welcome message, guide system, shortcuts,
+                            and tooltips. Through this process, I realised that experimental interactions require a
+                            careful balance between exploration and instruction. Too much guidance can reduce curiosity,
+                            while too little guidance can create confusion.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="peersWork">
+                <h4>Contrast to peer's creative tool</h4>
+                <p>Another aspect of the course that influenced my thinking was observing the work of my peers. One
+                    project that left a strong impression on me was Crop-llage. What impressed me most was its
+                    learnability. The interface contained very little text, yet users could quickly understand how to
+                    use the tool through interaction alone. Observing this project made me reflect on my own design
+                    decisions and consider how simplicity itself can become an effective form of communication.</p>
+                <p>Another project that left a strong impression on me was Sketchy Sketch Sound. What interested me most
+                    was its approach to mapping. User input was not only translated into visual output, but was also
+                    connected to different sounds and musical qualities. The project creatively combined visual and
+                    auditory feedback into a single experience.</p>
+                <p>It also encouraged me to think more broadly about how different sensory outputs can be connected
+                    through interaction design.</p>
+                <p>Another idea that stood out to me was the way the creative process itself became visible within the
+                    final outcome. I noticed that several projects allowed traces of the user's creative
+                    journey to remain present in the result. This is something I would like to explore further in future
+                    iterations of Brushloom. For example, allowing users to review the evolution of their brushes over
+                    time could increase their awareness of the generative process and strengthen the overall
+                    experience.</p>
+                <p>I also observed that some peers used animated guidance systems rather than relying heavily on written
+                    instructions. This demonstrated how motion can communicate interaction more efficiently than text
+                    and is something I would like to explore in future projects.</p>
+
+            </div>
+
+            <p>Overall, this project allowed me to develop not only my technical skills, but also my understanding of
+                the design process. Through the development of Brushloom, I explored different ways of balancing
+                unpredictability, control, and learnability within an interactive experience. The challenges I
+                encountered throughout the project helped me better understand how design decisions shape the
+                relationship between users and creative tools.</p>
+
+
+        </div>
+
+    </section>
 
 
     <section class="referenceSec">
@@ -409,7 +701,7 @@
                 canvas</a>
             <a href=" https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame">requestAnimationFrame</a>
             <a href="https://web.dev/articles/canvas-performance">mentioned requestAnimationFrame</a>
-            <a href="https://www.debugbear.com/blog/requestanimationframe">discription for requestAnimationFrame</a>
+            <a href="https://www.debugbear.com/blog/requestanimationframe">description for requestAnimationFrame</a>
 
         </div>
     </section>
